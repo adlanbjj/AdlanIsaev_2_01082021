@@ -204,7 +204,7 @@ input
 {
     background: #F2F2F2;
     border-radius: 15px;
-    width: 75%;
+    width: 60%;
 }
 
 .heb_mar_cont h2
@@ -282,6 +282,7 @@ input
     background:#F2F2F2;
     border-radius: 15px;
     margin-left: 25px;
+    width: 35%;
 }
 
 .heb_mar_block_2
@@ -321,7 +322,12 @@ input
 
 .block_2_txt
 {
-    margin-left: 15px;    
+    margin-left: 15px;
+}
+
+.block_2_txt i
+{
+    margin-top: 35px;
 }
 
 .pop_info
@@ -344,7 +350,7 @@ input
 {
     color: #0065FC;
     font-size: 0.7em;
-    padding: 0;
+    
 }
 
 

@@ -5,6 +5,14 @@ body
     max-width: 1440px;
 }
 
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        padding: 3em 3em 3em 3em;
+    }
+}
+
 /* Header */
 
 header
@@ -69,6 +77,56 @@ h2
     padding-top: 25px;
 }
 
+@media screen and (max-width: 768px)
+{
+    
+    header
+    {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    nav
+    {
+        
+    }
+
+    nav ul
+    {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+
+    nav a
+    {
+        font-size: 1.1em;
+    }
+
+    nav a:hover
+    {
+        border-top: 1px solid blue;
+    }
+
+    nav ul li a span
+    {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    nav ul li
+    {
+        justify-content: space-between;
+        display: flex;
+    }
+}
+
 
 /* section_1 */
 
@@ -128,8 +186,6 @@ h2
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-
 
 .bouton_rechercher
 {
@@ -195,12 +251,34 @@ input
 
 }
 
+@media screen and (max-width: 768px)
+{
+    .nav_block
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav_aside ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav_aside ul li
+    {
+        margin-top: 15px;
+    }
+}
+
+
 /* Hebergement Marseille cont 1 */
 
 .heb_mar
 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+
 }
 
 .heb_mar_cont
@@ -277,6 +355,45 @@ input
 .block__item span i
 {
     color: rgb(228, 224, 224);
+}
+
+@media screen and (max-width: 768px)
+{
+    .heb_mar
+    {
+        display: flex;
+    }
+
+    .block__row
+    {
+        display: flex;
+    }
+
+
+    .heb_mar_cont
+    {
+      
+        
+    }
+
+    .block__item
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heb_backr
+    {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .affiche
+    {
+       
+    }
 }
 
 /* Hebergement Marseille cont 2 */
@@ -362,8 +479,33 @@ input
     justify-content: center;
 }
 
-/* Activites a Marseille */
+@media screen and (max-width: 768px)
+{
 
+
+    .heb_mar_pop
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heb_mar_wrap
+    {
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        
+        
+    }
+
+    .heb_mar_block_2
+    {
+        display: flex;
+        
+    }
+}
+
+/* Activites a Marseille */
 
 .activ_mars
 {
@@ -432,9 +574,34 @@ input
     margin-top: 40px;
 }
 
+@media screen and (max-width: 768px)
+{
+    .activ_mars
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activ_in
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activ_mars_cont
+    {
+        display: flex;
+    }
+
+    .activ_mars_inside
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 /* footer */
-
-
 
 .foot
 {
@@ -459,4 +626,23 @@ input
 .foot_block_2
 {
     margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px)
+{
+    .foot_block
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .foot_wrap
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 }

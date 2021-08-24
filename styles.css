@@ -83,20 +83,19 @@ h2
     header
     {
         display: flex;
-        flex-wrap: wrap-reverse;
+        align-items: flex-start;
     }
 
     nav
     {
-        
+
     }
 
     nav ul
     {
         display: flex;
-        align-items: flex-end;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        align-items:flex-start;
+        flex-direction: row;
     }
 
     nav li
@@ -124,6 +123,14 @@ h2
     {
         justify-content: space-between;
         display: flex;
+        align-items: center;
+    }
+
+    .span
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 }
 
@@ -340,7 +347,6 @@ input
 }
 
 
-
 .block__item img
 {
     border-radius: 15px 15px 0px 0px;
@@ -362,24 +368,15 @@ input
     .heb_mar
     {
         display: flex;
+        justify-content:center;
+        background-color: white;
     }
-
-    .block__row
-    {
-        display: flex;
-    }
-
 
     .heb_mar_cont
     {
-      
-        
-    }
-
-    .block__item
-    {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .heb_backr
@@ -387,12 +384,19 @@ input
         background-color: white;
         display: flex;
         flex-direction: column;
-        align-items: flex-start
+        align-content: center;
     }
 
-    .affiche
+    .heb_mar_wrap
     {
-       
+        width: 300px;
+    }
+
+    .heb_mar_pop
+    {
+        width:300px ;
+        border-radius: 0;
+        justify-content: center;
     }
 }
 
@@ -481,28 +485,18 @@ input
 
 @media screen and (max-width: 768px)
 {
-
+    .heb_mar_wrap
+    {
+        width: 340px;
+    }
 
     .heb_mar_pop
     {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .heb_mar_wrap
-    {
-        display: flex;
-        flex-direction:row;
+        width:440px ;
+        border-radius: 0;
         justify-content: center;
-        
-        
     }
-
-    .heb_mar_block_2
-    {
-        display: flex;
-        
-    }
+    
 }
 
 /* Activites a Marseille */
@@ -597,6 +591,12 @@ input
     {
         display: flex;
         flex-direction: column;
+    }
+
+    .activ_in img
+    {
+        width: 300px;
+        height: 120px;
     }
 }
 

@@ -1,8 +1,9 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin: auto;
     max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 768px)
@@ -205,6 +206,10 @@ h2
     padding: 15px;
 }
 
+.loupe
+{
+    display: none;
+}
 
 .search_form i
 {
@@ -255,7 +260,6 @@ input
 .info p
 {
     margin-left: 10px;
-
 }
 
 @media screen and (max-width: 768px)
@@ -276,6 +280,38 @@ input
     {
         margin-top: 15px;
     }
+
+    .bouton_rechercher
+    {
+        display: none;
+    }
+
+    .loupe
+    {
+        display: flex;
+        
+    }
+
+    .loupe i
+    {
+        color: white;
+        border-radius: 15px;
+        height: 70%;
+        background:#0065FC ;
+        border: 15px solid #0065FC;
+    }
+
+    .search_form
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .search_form i
+    {
+        height: 70%;
+    }
+
 }
 
 
@@ -285,14 +321,14 @@ input
 {
     display: flex;
     flex-wrap: wrap-reverse;
-
 }
 
-.heb_mar_cont
+
+.heb_backr
 {
     background: #F2F2F2;
-    border-radius: 15px;
     width: 65%;
+    border-radius: 15px;
 }
 
 .heb_mar_cont h2
@@ -309,24 +345,21 @@ input
 
 .block__row
 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px;
-    padding-left: 35px;
-    margin-right: 40px;
-    margin-left: 35px;
+    justify-content: space-around;
 }
 
 .block__item
 {
-   
    margin-right:15px;
    border-radius: 15px;
    border: 3px solid rgb(255, 255, 255);
    margin-bottom: 45px;
    background: white;
    box-shadow: 0px 5px 5px 0px rgb(209, 208, 208);
+   width: 25%;
 }
 
 .block__item:hover
@@ -350,6 +383,8 @@ input
 .block__item img
 {
     border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .block__item__txt
@@ -389,12 +424,12 @@ input
 
     .heb_mar_wrap
     {
-        width: 300px;
+        width: 100%;
     }
 
     .heb_mar_pop
     {
-        width:300px ;
+        width:100%;
         border-radius: 0;
         justify-content: center;
     }
@@ -455,8 +490,7 @@ input
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 15px;
-    margin-left: 10px;
+    font-size: 0.7em;
 }
 
 .pop_info i
@@ -480,7 +514,8 @@ input
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 768px)
@@ -597,6 +632,7 @@ input
     {
         width: 300px;
         height: 120px;
+        object-fit: cover;
     }
 }
 
@@ -608,7 +644,6 @@ input
     background: #F2F2F2;
     padding: 15px;
     margin-top: 35px;
-    margin-bottom: 35px;
 }
 
 .foot_wrap

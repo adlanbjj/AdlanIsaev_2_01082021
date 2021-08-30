@@ -262,6 +262,7 @@ a
         top: 19px;
         right: 0px;
         width: unset;
+        cursor: pointer;
     }
 
     .parametres h1
@@ -288,7 +289,6 @@ a
 .nav_block
 {
     display: flex;
-    margin-bottom: 15px;
 }
 
 

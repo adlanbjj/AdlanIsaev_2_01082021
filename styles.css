@@ -10,7 +10,7 @@ body
 
 /* -------------Body Media------------- */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 968px)
 {
     body
     {
@@ -62,6 +62,8 @@ nav a:hover
 {
     border-top: none;
 }
+
+/* ------------------ Parametres ----------------- */
 
 .parametres
 {
@@ -144,25 +146,156 @@ input::placeholder
     display: none;
 }
 
-
 a
 {
     text-decoration: none;
     color: black;
 }
 
-.info 
+/* -------------Header Media------------- */
+
+@media screen and (max-width: 968px)
+{
+    .filtres div:nth-child(4)
+    {
+        margin-left: 0px;
+    }
+
+    .boutonSearch
+    {
+        display: none;
+    }
+
+    .loupe
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .loupe i
+    {
+        color: white;
+        border-radius: 15px;
+        background:#0065FC ;
+        border: 18px solid #0065FC;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fa-search
+    {
+        display: inline;
+    }
+
+    .map
+    {
+        width: 40px;
+    }
+
+    .map i
+    {
+        display: flex;
+    }
+
+    input
+    {
+        height: 50px;
+        border: none;
+    }
+
+    form
+    {
+        border: 2px solid #F2F2F2;
+        border-radius: 16px 16px 16px 16px;
+        border-right: none;
+        border-left: none;
+        height: 50px;
+        margin: 1.1em 0 1.3em 0;
+    }
+
+    header 
+    {
+        display: block;
+    }
+
+    header nav 
+    {
+        display: flex;
+        justify-content: space-between;
+        position: unset;
+        margin-top: 25px;
+    }
+
+    header nav a
+    {
+        padding: 0 0 20px 0;
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        text-align: center;
+    }
+
+    header nav a:hover 
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: unset;
+        padding-top: 0;
+    }
+
+    .lien_inscrire 
+    {
+        all: unset;
+        position: absolute;
+        top: 19px;
+        right: 0px;
+        width: unset;
+        color: #0065FC;
+        font-weight: bold;
+    }
+
+    .lien_inscrire:hover
+    {
+        all: unset;
+        border-top: none;
+        color: #0065FC;
+        font-weight: bold;
+        position: absolute;
+        top: 19px;
+        right: 0px;
+        width: unset;
+    }
+
+    .parametres h1
+    {
+        margin-top: 1.8em;
+    }
+
+}
+
+/* ----------------------- Filltres ---------------------- */
+
+.filtrNav
 {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
 }
+
+.filtrNav p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.nav_block
+{
+    display: flex;
+    margin-bottom: 15px;
+}
+
 
 .nav_aside ul
 {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: flex-start;
 }
 
 .nav_aside ul li
@@ -206,22 +339,13 @@ a
     font-size: 15px;
 }
 
-.nav_block
-{
-    display: flex;
-    align-items: center;
-}
-
-.filtrNav
-{
-    display: flex;
-    flex-direction: column;
-}
+/* ----------------- Filltres (info) --------------- */
 
 .info
 {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .info i
@@ -255,131 +379,42 @@ a
     padding: 1px;
 }
 
-/* -------------Header Media------------- */
+/* --------------- Media Filltres -------------------- */
 
-@media (min-width: 423px) and (max-width: 1160px)
+@media screen and (max-width: 610px) 
 {
-    .filtres div:nth-child(4)
-{
-    margin-left: 0px;
-}
+    .filtrNav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.boutonSearch
-{
-    display: none;
-}
+    .nav_block
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.loupe
-{
-    display: flex;
-    justify-content: center;
-}
+    .nav_aside ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
 
-.loupe i
-{
-    color: white;
-    border-radius: 15px;
-    background:#0065FC ;
-    border: 18px solid #0065FC;
-    display: flex;
-    justify-content: center;
-}
+    .nav_aside ul li
+    {
+        margin-top: 15px;
+    }
 
-
-.fa-search
-{
-    display: inline;
-}
-
-.map
-{
-    width: 40px;
-}
-
-.map i
-{
-    display: flex;
-}
-
-input
-{
-    height: 50px;
-    border: none;
-}
-
-form
-{
-    border: 2px solid #F2F2F2;
-    border-radius: 16px 16px 16px 16px;
-    border-right: none;
-    border-left: none;
-    height: 50px;
-    margin: 1.1em 0 1.3em 0;
-}
-
-header 
-{
-    display: block;
-}
-
-header nav 
-{
-    display: flex;
-    justify-content: space-between;
-    position: unset;
-    margin-top: 25px;
-}
-
-header nav a
-{
-    padding: 0 0 20px 0;
-    width: 50%;
-    border-bottom: 3px solid #F2F2F2;
-    text-align: center;
-}
-
-header nav a:hover 
-{
-    border-bottom: 3px solid #0065FC;
-    border-top: unset;
-    padding-top: 0;
-}
-
-.lien_inscrire 
-{
-    all: unset;
-    position: absolute;
-    top: 19px;
-    right: 0px;
-    width: unset;
-    color: #0065FC;
-    font-weight: bold;
-}
-
-.lien_inscrire:hover
-{
-    all: unset;
-    border-top: none;
-    color: #0065FC;
-    font-weight: bold;
-    position: absolute;
-    top: 19px;
-    right: 0px;
-    width: unset;
-}
-
-.parametres h1
-{
-    margin-top: 1.8em;
-}
-
-.info i
-{
-    margin-bottom: 1.5em; 
-}
+    .info i
+    {
+        margin-bottom: 1.5em; 
+    }
 
 }
-
 
 /* ------------------- Hebergement Marseille Conteneur 1 ------------------- */
 
@@ -633,7 +668,7 @@ aside div article div span
 
 .activites
 {
-    height: 700px;
+    height: 550px;
     width: auto;
     margin: 45px 3.8% 0 3.8%;
     padding: 0;
@@ -642,7 +677,6 @@ aside div article div span
 .activites h2
 {
     font-size: 1.3em;
-    margin: 70px 0 30px 0;
 }
 
 .blocactivites
@@ -763,6 +797,12 @@ aside div article div span
 
 /* ------------- footer ------------- */
 
+.foot
+{
+    padding: 0;
+    margin: 0;
+}
+
 footer
 {
     background-color: #F2F2F2;
@@ -782,22 +822,13 @@ footer section
 
 footer section h2
 {
-    margin-bottom: 10px;
     font-size: 1.2em;
 }
 footer section p
 {
-    margin-top: 20px;
     cursor: pointer;
     width: fit-content;
 }
-
-footer section p:hover
-{
-    border-bottom: 1px solid black;
-}
-
-
 
 
 @media (min-width: 872px) and (max-width: 1160px)
@@ -956,22 +987,6 @@ input
     width: auto;
 }
 
-.nav_block
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav_aside ul
-{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav_aside ul li
-{
-    margin-top: 15px;
-}
 
 .activites
 {
@@ -1022,6 +1037,8 @@ footer
 {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 footer section

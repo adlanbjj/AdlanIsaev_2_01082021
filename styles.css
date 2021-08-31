@@ -14,7 +14,7 @@ body
 {
     body
     {
-        padding: 3em 3em 3em 3em;
+       margin: 0;
     }
 }
 
@@ -211,6 +211,8 @@ a
         border-left: none;
         height: 50px;
         margin: 1.1em 0 1.3em 0;
+        display: flex;
+        justify-content: space-between;
     }
 
     header 
@@ -296,6 +298,7 @@ a
 {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .nav_aside ul li

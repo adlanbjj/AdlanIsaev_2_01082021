@@ -1,4 +1,4 @@
-/* -------------Body------------- */
+
 
 body
 {
@@ -421,31 +421,37 @@ a
 
 /* ------------------- Hebergement Marseille Conteneur 1 ------------------- */
 
-.hebWrap
+.hebergement
 {
     display: flex;
     justify-content: space-between;
     margin: 30px 3.8% 0 3.8%;
 }
 
-.hebWrap h2
+.hebergement h2
 {
     font-size: 1.3em;
     width: fit-content;
     margin: 0 0 25px 0;
 }
 
-.hebWrap p
+.hebergement p
 {
     letter-spacing: 0.1px;
     font-size: 1.2em;
     font-weight: 800;
     cursor: pointer;
     width: fit-content; 
+    margin-top: 50px;
 }
 
+.hebergement p:hover
+{
+    width: fit-content;
+    border-bottom: 2px solid black;
+}
 
-.hebergement
+.hebergement section
 {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -455,22 +461,21 @@ a
     padding: 40px;
 }
 
-.hebergCont
+.hebergement section .hebergCont
 {
     display: flex;
-    height: 450px;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    height: 415px;
 }
 
-.article
+.hebergement section .hebergCont div
 {
     display: flex;
     justify-content: space-between;
 }
 
-.article
+.hebergement section .hebergCont div article
 {
     border: 1px solid white;
     border-radius: 15px;
@@ -486,19 +491,19 @@ a
     transition: transform .2s;
 }
 
-.article:hover
+.hebergement section .hebergCont div article:hover
 {
     -ms-transform: scale(1.019); 
     -webkit-transform: scale(1.019); 
     transform: scale(1.019); 
 }
 
-.article:active
+.hebergement section .hebergCont div article:active
 {
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.article img
+.hebergCont article img
 {
     height: 115px;
     width: 98%;
@@ -508,7 +513,7 @@ a
     object-fit: cover;
 }
 
-.article h3
+.hebergCont article h3
 {
     font-size: 1em;
     margin: 8px 0 4px 15px;
@@ -831,7 +836,7 @@ footer section p
 
 @media (min-width: 872px) and (max-width: 1160px)
 {
-    .hebWrap
+    .hebergement
     {
         flex-direction: column-reverse;
         margin: 0;
@@ -842,20 +847,20 @@ footer section p
         height: 1060px;
     }
 
-    .hebWrap aside
+    .hebergement aside
     {
         width: 100%;
         height: 250px;
     }
 
-    .hebWrap aside div
+    .hebergement aside div
     {
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 40px 0px 40px;
     }
 
-    .hebWrap aside .populaire
+    .hebergement aside .populaire
     {
         all: unset;
         display: flex;
@@ -865,25 +870,25 @@ footer section p
 
     }
 
-    .hebWrap aside div article
+    .hebergement aside div article
     {
         width: 29.65%;
         padding: 4px;
         height: 150px;
     }
 
-    .hebWrap aside div article img
+    .hebergement aside div article img
     {
         height: 150px;
     }
 
-    .hebWrap aside div article div
+    .hebergement aside div article div
     {
         padding-left: 10px;
         padding-right: 0;
     }
 
-    .hebergement
+    .hebergement section
     {
         width: auto;
     }
@@ -905,7 +910,7 @@ footer section p
 
 @media all and (max-width: 871px)
 {
-.hebWrap
+.hebergement
 {
     flex-direction: column-reverse;
     margin: 0;
@@ -921,12 +926,12 @@ aside
     border-radius: 0px;
 }
 
-.hebWrap aside
+.hebergement aside
 {
     width: 100%;
 }
 
-.hebergement
+.hebergement section
 {
     width: auto;
 }
@@ -944,7 +949,7 @@ aside
     justify-content: space-between;
 }
 
-.article
+.hebergCont article img
 {
     object-fit: fill;
 }
@@ -959,28 +964,28 @@ input
 
 @media screen and (max-width: 610px) 
 {
-
-.hebergement
+.hebergement section
 {
     padding: 30px;
     background: none;
 }
 
-.hebergCont
+.hebergement section .hebergCont div
+{
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    height: 650px;
+    width: 100%;
+}
+
+.hebergement section .hebergCont
 {
     height: 1330px;
     width: 100%;
 }
 
-.article
-{
-    flex-direction: column;
-    margin: 0;
-    width: 100%;
-}
-
-
-.article img
+.hebergement section .hebergCont div article
 {
     width: auto;
 }

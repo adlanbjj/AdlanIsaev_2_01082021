@@ -421,37 +421,31 @@ a
 
 /* ------------------- Hebergement Marseille Conteneur 1 ------------------- */
 
-.hebergement
+.hebWrap
 {
     display: flex;
     justify-content: space-between;
     margin: 30px 3.8% 0 3.8%;
 }
 
-.hebergement h2
+.hebWrap h2
 {
     font-size: 1.3em;
     width: fit-content;
     margin: 0 0 25px 0;
 }
 
-.hebergement p
+.hebWrap p
 {
     letter-spacing: 0.1px;
     font-size: 1.2em;
     font-weight: 800;
     cursor: pointer;
     width: fit-content; 
-    margin-top: 50px;
 }
 
-.hebergement p:hover
-{
-    width: fit-content;
-    border-bottom: 2px solid black;
-}
 
-.hebergement section
+.hebergement
 {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -461,21 +455,22 @@ a
     padding: 40px;
 }
 
-.hebergement section .hebergCont
+.hebergCont
 {
     display: flex;
-    flex-direction: column;
+    height: 450px;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 415px;
+    align-items: flex-start;
 }
 
-.hebergement section .hebergCont div
+.article
 {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergement section .hebergCont div article
+.article
 {
     border: 1px solid white;
     border-radius: 15px;
@@ -491,19 +486,19 @@ a
     transition: transform .2s;
 }
 
-.hebergement section .hebergCont div article:hover
+.article:hover
 {
     -ms-transform: scale(1.019); 
     -webkit-transform: scale(1.019); 
     transform: scale(1.019); 
 }
 
-.hebergement section .hebergCont div article:active
+.article:active
 {
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.hebergCont article img
+.article img
 {
     height: 115px;
     width: 98%;
@@ -513,7 +508,7 @@ a
     object-fit: cover;
 }
 
-.hebergCont article h3
+.article h3
 {
     font-size: 1em;
     margin: 8px 0 4px 15px;
@@ -836,7 +831,7 @@ footer section p
 
 @media (min-width: 872px) and (max-width: 1160px)
 {
-    .hebergement
+    .hebWrap
     {
         flex-direction: column-reverse;
         margin: 0;
@@ -847,20 +842,20 @@ footer section p
         height: 1060px;
     }
 
-    .hebergement aside
+    .hebWrap aside
     {
         width: 100%;
         height: 250px;
     }
 
-    .hebergement aside div
+    .hebWrap aside div
     {
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 40px 0px 40px;
     }
 
-    .hebergement aside .populaire
+    .hebWrap aside .populaire
     {
         all: unset;
         display: flex;
@@ -870,25 +865,25 @@ footer section p
 
     }
 
-    .hebergement aside div article
+    .hebWrap aside div article
     {
         width: 29.65%;
         padding: 4px;
         height: 150px;
     }
 
-    .hebergement aside div article img
+    .hebWrap aside div article img
     {
         height: 150px;
     }
 
-    .hebergement aside div article div
+    .hebWrap aside div article div
     {
         padding-left: 10px;
         padding-right: 0;
     }
 
-    .hebergement section
+    .hebergement
     {
         width: auto;
     }
@@ -910,7 +905,7 @@ footer section p
 
 @media all and (max-width: 871px)
 {
-.hebergement
+.hebWrap
 {
     flex-direction: column-reverse;
     margin: 0;
@@ -926,12 +921,12 @@ aside
     border-radius: 0px;
 }
 
-.hebergement aside
+.hebWrap aside
 {
     width: 100%;
 }
 
-.hebergement section
+.hebergement
 {
     width: auto;
 }
@@ -949,7 +944,7 @@ aside
     justify-content: space-between;
 }
 
-.hebergCont article img
+.article
 {
     object-fit: fill;
 }
@@ -964,28 +959,28 @@ input
 
 @media screen and (max-width: 610px) 
 {
-.hebergement section
+
+.hebergement
 {
     padding: 30px;
     background: none;
 }
 
-.hebergement section .hebergCont div
-{
-    flex-direction: column;
-    margin: 0;
-    justify-content: space-between;
-    height: 650px;
-    width: 100%;
-}
-
-.hebergement section .hebergCont
+.hebergCont
 {
     height: 1330px;
     width: 100%;
 }
 
-.hebergement section .hebergCont div article
+.article
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+
+.article img
 {
     width: auto;
 }

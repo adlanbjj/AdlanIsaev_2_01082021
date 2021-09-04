@@ -445,12 +445,6 @@ a
     margin-top: 50px;
 }
 
-.hebergement p:hover
-{
-    width: fit-content;
-    border-bottom: 2px solid black;
-}
-
 .hebergement section
 {
     background-color: #F2F2F2;

@@ -1,5 +1,3 @@
-
-
 body
 {
     font-family: 'Raleway', sans-serif;
@@ -245,7 +243,6 @@ a
 
     .lien_inscrire 
     {
-        all: unset;
         position: absolute;
         top: 19px;
         right: 0px;
@@ -256,7 +253,6 @@ a
 
     .lien_inscrire:hover
     {
-        all: unset;
         border-top: none;
         color: #0065FC;
         font-weight: bold;
@@ -445,7 +441,7 @@ a
     margin-top: 50px;
 }
 
-.hebergement section
+.hebergement .hebergWrap
 {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -455,7 +451,7 @@ a
     padding: 40px;
 }
 
-.hebergement section .hebergCont
+.hebergCont
 {
     display: flex;
     flex-direction: column;
@@ -463,13 +459,13 @@ a
     height: 415px;
 }
 
-.hebergement section .hebergCont div
+.hebergBlock
 {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergement section .hebergCont div article
+.hebergBlock article
 {
     border: 1px solid white;
     border-radius: 15px;
@@ -485,14 +481,14 @@ a
     transition: transform .2s;
 }
 
-.hebergement section .hebergCont div article:hover
+.hebergBlock article:hover
 {
     -ms-transform: scale(1.019); 
     -webkit-transform: scale(1.019); 
     transform: scale(1.019); 
 }
 
-.hebergement section .hebergCont div article:active
+.hebergBlock article:active
 {
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -538,7 +534,9 @@ a
     color: #F2F2F2;
 }
 
-aside
+/* ------------------- Hebergement Marseille Conteneur 2 ------------------- */
+
+.aside
 {
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -557,7 +555,7 @@ aside
     margin: 40px 30px 0px 30px;
 }
 
-aside div
+.aside div
 {
     height: 500px;
     display: flex;
@@ -566,17 +564,17 @@ aside div
     padding: 4px 30px 30px 30px;
 }
 
-aside div article:hover
+.aside div article:hover
 {
     transform: scale(1.019); 
 }
 
-aside div article:active
+.aside div article:active
 {
     box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-aside div article img
+.aside div article img
 {
     width: 39%;
     min-width: 39%;
@@ -585,7 +583,7 @@ aside div article img
     object-fit: cover;
 }
 
-aside div article div
+.aside div article div
 {
     all: unset;
     font: inherit;
@@ -594,7 +592,7 @@ aside div article div
     height: auto;
 }
 
-aside div article
+.aside div article
 {
     border: 1px solid white;
     background-color: white;
@@ -607,7 +605,7 @@ aside div article
     transition: transform .2s;
 }
 
-aside div article div h3:nth-child(1)
+.aside div article div h3:nth-child(1)
 {
     font-size: 1em;
     margin-top: 4px;
@@ -615,19 +613,15 @@ aside div article div h3:nth-child(1)
     padding-right: 8px;
 } 
 
-aside div article div h3:nth-child(2)
+.aside div article div h3:nth-child(2)
 {
     font-size: 1em;
     margin-top: 4px;
     margin-bottom: 10px;
 } 
 
-aside div article div span
+.aside div article div span
 {
-    all: unset;
-    font: inherit;
-    font-size: 0.9em;
-    font-weight: 400;
     margin: 0;
     overflow: hidden;
     white-space: nowrap;
@@ -640,23 +634,12 @@ aside div article div span
 
 .etoiles_populaire
 {
-    all: unset;
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
     padding: 50px 0 2px 0;
 }
 
-.etoiles_populairemilieu
-{
-    box-sizing: border-box;
-    position: absolute;
-    all: unset;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.8em;
-    padding: 33px 0 2px 0;
-}
 
 /* ------------------- Hebergement Marseille Conteneur Media ------------------- */
 
@@ -821,6 +804,7 @@ footer section h2
 {
     font-size: 1.2em;
 }
+
 footer section p
 {
     cursor: pointer;
@@ -841,22 +825,21 @@ footer section p
         height: 1060px;
     }
 
-    .hebergement aside
+    .aside
     {
         width: 100%;
         height: 250px;
     }
 
-    .hebergement aside div
+    .aside div
     {
         flex-direction: row;
         justify-content: space-between;
         padding: 0px 40px 0px 40px;
     }
 
-    .hebergement aside .populaire
+    .populaire
     {
-        all: unset;
         display: flex;
         justify-content: space-between;
         padding: 0;
@@ -864,27 +847,35 @@ footer section p
 
     }
 
-    .hebergement aside div article
+    .aside div article
     {
         width: 29.65%;
         padding: 4px;
         height: 150px;
     }
 
-    .hebergement aside div article img
+    .aside div article img
     {
         height: 150px;
     }
 
-    .hebergement aside div article div
+    .aside div article div
     {
         padding-left: 10px;
         padding-right: 0;
     }
 
-    .hebergement section
+    .hebergement .hebergWrap
     {
         width: auto;
+    }
+
+    .etoiles_populaire
+    {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.8em;
+        padding: 50px 0 2px 0;
     }
 
     .blocactivites
@@ -904,143 +895,148 @@ footer section p
 
 @media all and (max-width: 871px)
 {
-.hebergement
-{
-    flex-direction: column-reverse;
-    margin: 0;
+    .hebergement
+    {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .activites
+    {
+        height: 1060px;
+    }
+
+    .aside
+    {
+        border-radius: 0px;
+    }
+
+    .aside
+    {
+        width: 100%;
+    }
+
+    .hebergement .hebergWrap
+    {
+        width: auto;
+    }
+
+    .blocactivites
+    {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 930px;
+    }
+
+    .premierblock, .deuxiemeblock
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hebergCont article img
+    {
+        object-fit: fill;
+    }
+
+    input
+    {
+        width: 75%;
+    }
+
 }
 
-.activites
-{
-    height: 1060px;
-}
-
-aside
-{
-    border-radius: 0px;
-}
-
-.hebergement aside
-{
-    width: 100%;
-}
-
-.hebergement section
-{
-    width: auto;
-}
-
-.blocactivites
-{
-    flex-direction: column;
-    justify-content: space-between;
-    height: 930px;
-}
-
-.premierblock, .deuxiemeblock
-{
-    width: 100%;
-    justify-content: space-between;
-}
-
-.hebergCont article img
-{
-    object-fit: fill;
-}
-
-input
-{
-    width: 75%;
-}
-
-
-}
 
 @media screen and (max-width: 610px) 
 {
-.hebergement section
-{
-    padding: 30px;
-    background: none;
-}
 
-.hebergement section .hebergCont div
-{
-    flex-direction: column;
-    margin: 0;
-    justify-content: space-between;
-    height: 650px;
-    width: 100%;
-}
+    .hebergement .hebergWrap
+    {
+        padding: 30px;
+        background: none;
+    }
 
-.hebergement section .hebergCont
-{
-    height: 1330px;
-    width: 100%;
-}
+    .hebergBlock
+    {
+        flex-direction: column;
+        margin: 0;
+        justify-content: space-between;
+        height: 650px;
+        width: 100%;
+    }
 
-.hebergement section .hebergCont div article
-{
-    width: auto;
-}
+    .hebergCont
+    {
+        height: 1330px;
+        width: 100%;
+    }
 
+    .hebergBlock article
+    {
+        width: auto;
+    }
 
-.activites
-{
-    height: 1360px;
-    margin: 45px 30px 0 30px;
-}
+    .etoiles_populaire
+    {
+        padding: 35px 0 2px 0;
+    }
 
-.blocactivites
-{
-    height: 1275px;
-    flex-direction: column;
-}
+    .activites
+    {
+        height: 1360px;
+        margin: 45px 30px 0 30px;
+    }
 
-.premierblock, .deuxiemeblock
-{
-    height: 622px;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .blocactivites
+    {
+        height: 1275px;
+        flex-direction: column;
+    }
 
-.grandecarte
-{
-    height: 190px;
-}
+    .premierblock, .deuxiemeblock
+    {
+        height: 622px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.grandecarte img, .doublecartepartie1 img, .doublecartepartie2 img, .doublecarte2partie1 img, .doublecarte2partie2 img
-{
-    height: 74%;
-}
+    .grandecarte
+    {
+        height: 190px;
+    }
 
-.doublecarte
-{
-    height: 405px;
-    justify-content: space-between;
-}
+    .grandecarte img, .doublecartepartie1 img, .doublecartepartie2 img, .doublecarte2partie1 img, .doublecarte2partie2 img
+    {
+        height: 74%;
+    }
 
-.doublecarte div
-{
-    height: 190px;
-}
+    .doublecarte
+    {
+        height: 405px;
+        justify-content: space-between;
+    }
 
-.blocactivites div article
-{
-    width: 100%;
-}
+    .doublecarte div
+    {
+        height: 190px;
+    }
 
-footer
-{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
+    .blocactivites div article
+    {
+        width: 100%;
+    }
 
-footer section
-{
-    width: 80%;
-}
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer section
+    {
+        width: 80%;
+    }
 
 }

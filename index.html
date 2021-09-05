@@ -29,13 +29,13 @@
                 <div class="map">
                     <i class="fas fa-map-marker-alt map"></i>
                 </div>
-                    <input type="text" placeholder="Marseille, France" name="localisation" maxlength="20"/>
+                    <input type="text" placeholder="Marseille, France"
+                    name="localisation" maxlength="20"/>
                     <a href="#" class="boutonSearch">Rechercher</a>
                 <div class="loupe">
                     <a href="#"><i class="fas fa-search"></i></a>
                 </div>
             </form>
-
             <div class="filtrNav">
                 <p><strong>Filtres</strong></p>
                     <div class="nav_block">
@@ -54,11 +54,12 @@
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <div id="Hebergements" class="hebergement">
-            <section class="hebergWrap">
+        
+        <section class="hebergement">
+            <div id="Hebergements"  class="hebergWrap">
                 <h2>Hébergement à Marseille</h2>
                 <div class="hebergCont">
-                    <div>
+                    <div class="hebergBlock">
                         <article>
                             <img src="images/auberge-la-cannabiere.jpg" alt="Photo d'une chambre Auberge la cannebière"/>
                             <h3>Auberge la Cannebière</h3>
@@ -71,7 +72,7 @@
                                 <i class="fas fa-star grise"></i>
                             </span>
                         </article>
-
+        
                         <article>
                             <img src="images/hotel-du-port.jpg" alt="Photo d'une chambre de l'Hôtel du port"/>
                             <h3>Hôtel du port</h3>
@@ -99,7 +100,7 @@
                         </article>
                     </div>
 
-                    <div>
+                    <div class="hebergBlock">
                         <article>
                             <img src="images/hotel-de-la-mer.jpg" alt="Photo d'une chambre de l'Hôtel de la mer"/>
                             <h3>Hôtel de la mer</h3>
@@ -141,13 +142,13 @@
                     </div> 
                 </div>
                 <p>Afficher plus</p>
-            </section>
+                </div>
 
-        <aside>
-            <div class="populaire">
+        <div class="aside">
+            <span class="populaire">
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
-            </div>
+            </span>
             <div>
                 <article>
                     <img src="images/hotel-le-soleil-du-matin.jpg" alt="Photo d'une chambre de l'Hôtel Le soleil du matin"/>
@@ -192,8 +193,10 @@
             </div>
           </article>
         </div>
-      </aside>
+      </div>
     </div>
+    </section>
+
     <section id="Activites" class="activites">
         <h2>Activités à Marseille</h2>
             <div class="blocactivites">

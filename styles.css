@@ -99,9 +99,9 @@ form div i
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #F2F2F2;
+    
     border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
+    background: #F2F2F2;
 }
 
 
@@ -174,7 +174,7 @@ a
     {
         color: white;
         border-radius: 15px;
-        background:#0065FC ;
+        background:#0465f7;
         border: 18px solid #0065FC;
         display: flex;
         justify-content: center;
@@ -468,11 +468,10 @@ a
 
 .hebergBlock article
 {
-    border: 1px solid white;
     border-radius: 15px;
     height: 190px;
     width: 30%;
-    background-color: white;
+    background: white;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
     padding: 2px;
@@ -484,8 +483,6 @@ a
 
 .hebergBlock article:hover
 {
-    -ms-transform: scale(1.019); 
-    -webkit-transform: scale(1.019); 
     transform: scale(1.019); 
 }
 
@@ -546,14 +543,19 @@ a
     width: 30.1%;
 }
 
+
 .populaire
 {
-    all: unset;
     font-family: inherit;
     display: inline-block;
     display: flex;
     justify-content: space-between;
     margin: 40px 30px 0px 30px;
+}
+
+.populaire strong
+{
+    font-size: 1.3em;
 }
 
 .aside div
@@ -562,7 +564,7 @@ a
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 .aside div article:hover
@@ -586,7 +588,6 @@ a
 
 .aside div article div
 {
-    all: unset;
     font: inherit;
     font-size: inherit;
     padding-left: 20px;
@@ -595,8 +596,7 @@ a
 
 .aside div article
 {
-    border: 1px solid white;
-    background-color: white;
+    background: white;
     height: 140px;
     border-radius: 15px;
     cursor: pointer;
@@ -609,7 +609,7 @@ a
 .aside div article div h3:nth-child(1)
 {
     font-size: 1em;
-    margin-top: 4px;
+    margin-top: -25px;
     margin-bottom: 10px;
     padding-right: 8px;
 } 
@@ -624,7 +624,6 @@ a
 .aside div article div span
 {
     margin: 0;
-    overflow: hidden;
     white-space: nowrap;
 }
 
@@ -638,7 +637,7 @@ a
     display: flex;
     justify-content: flex-start;
     font-size: 0.8em;
-    padding: 50px 0 2px 0;
+    padding: 40px 0 2px 0;
 }
 
 
